@@ -29,7 +29,7 @@ const Router= () => {
           <Route path="/crud" element={<CRUD />} />
         </Route>
 
-        <Route path="/" element={!auth.currentUser ? <Login /> : <Navigate to="/teste" />} />
+        <Route path="/" element={!auth.currentUser ? <Login /> : <Navigate to="/random-users" />} />
 
       </Routes>
     </>
