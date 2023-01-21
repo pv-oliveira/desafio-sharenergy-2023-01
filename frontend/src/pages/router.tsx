@@ -30,6 +30,7 @@ const Router= () => {
         </Route>
 
         <Route path="/" element={!auth.currentUser ? <Login /> : <Navigate to="/random-users" />} />
+        <Route path='/*' element={<Navigate to='/' />} />
 
       </Routes>
     </>
