@@ -1,0 +1,48 @@
+.pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.pagination-container li {
+    float: left;
+    margin: 0 5px;
+    width: 15px;
+}
+
+.pagination-container button {
+    outline: none;
+    border: none;
+    transition: all .2s;
+    text-decoration: none;
+    background-color: rgb(68, 68, 68);
+    color: rgb(0, 128, 255);
+    width: 50px;
+    height: 50px;
+    margin: 0.6rem;
+}
+
+.pagination-container span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+
+.pagination-container button:hover {
+    outline: none;
+  color: rgb(31, 121, 210);
+}
+
+.pagination-container .selected-page {
+    background-color: white;
+    color: black;
+}

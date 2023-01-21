@@ -1,0 +1,17 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+.dog-container {
+    margin-bottom: 50px;
+}
+
+.dog-container img {
+    width: 500px;
+    height: 500px;
+}

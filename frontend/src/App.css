@@ -1,0 +1,58 @@
+.app {
+    display: flex;
+    justify-content: center;
+    min-height: 2400px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .col-sm-6 {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  
+  @media (min-width: 480px) and (max-width: 991px) {
+    .app {
+      min-height: 1300px;
+    }
+    .col-sm-6 {
+      width: 50%;
+    }  
+  }
+  @media (min-width: 992px) {
+    .app {
+      min-height: 1000px;
+    }
+  }
+  .thumbnail {
+    padding-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .pagination a {
+    min-width: 50px;
+  }
+  
+  .pagination > .active > a {
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+  }
+  
+  .pagination > li > a:focus {
+    color: #337ab7;
+    background-color: #fff;
+    border-color: #ddd;
+  }
+  
+  .shadow-light {
+    box-shadow: 0px 3px 3px 0px rgba(2, 2, 2, 0.2);
+  }
+  
+  .author {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  

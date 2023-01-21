@@ -1,0 +1,11 @@
+.input-users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.input-users input {
+  color: black;
+  padding: 15px;
+}
