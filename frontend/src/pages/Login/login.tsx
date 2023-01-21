@@ -35,15 +35,15 @@ const Login = () => {
 
   // Function in case there is a desire to register the access of a new user
   // Função para caso haja o desejo de registrar o acesso de um novo usuario
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log(formDefault)
+  // const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   console.log(formDefault)
 
-    const res = await api.post("auth/register", {
-      name, email, password, confirmPassword
-    })
-    console.log(res)
-  }
+  //   const res = await api.post("auth/register", {
+  //     name, email, password, confirmPassword
+  //   })
+  //   console.log(res)
+  // }
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -76,37 +76,6 @@ const Login = () => {
 
   return (
     <>
-    <form onSubmit={handleSubmit}>
-    <input 
-      id='name'
-      name='name'
-      type='text'
-      value={name}
-      onChange={handleChange}
-    />
-    <input 
-      id='email'
-      name='email'
-      type='text'
-      value={email}
-      onChange={handleChange}
-    />
-    <input 
-      id='password'
-      type='text'
-      name='password'
-      value={password}
-      onChange={handleChange}
-    />
-    <input 
-      id='confirm'
-      type='text'
-      name='confirmPassword'
-      value={confirmPassword}
-      onChange={handleChange}
-    />
-    <button >Click me</button>
-    </form>
       <div className="container-login">
         <div className="wrap-login">
           <form className="login-form" onSubmit={handleSubmitLogin}>
